@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.stroke-gradient-animated {
+  stroke: url(#pathGradient);
+}
+
+.stroke-gradient-animated {
+  stroke: url(#pathGradient);
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.5))
+      drop-shadow(0 0 20px rgba(249, 115, 22, 0.3))
+      drop-shadow(0 0 30px rgba(139, 92, 246, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.7))
+      drop-shadow(0 0 25px rgba(249, 115, 22, 0.5))
+      drop-shadow(0 0 35px rgba(139, 92, 246, 0.3));
+  }
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.glow-effect {
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+/* Adding 3D text effect */
+/* Adding 3D text effect with bright blue color */
+/* Gradient text effect with white and bright blue */
+/* Gradient text effect with bright blue and purple */
+.text-gradient {
+  background: linear-gradient(
+    45deg,
+    #1d4ed8,
+    #7c3aed
+  ); /* Bright Blue and Purple */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+/* Gradient text effect with bright blue and purple */
+.text-gradient {
+  background: linear-gradient(
+    45deg,
+    #1d4ed8,
+    #7c3aed
+  ); /* Bright Blue and Purple */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+/* animations.css */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 2s infinite ease-in-out;
+}
+
+/* animations.css */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 2s infinite ease-in-out;
+}
+
+.blockchain-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Increase height to make the space larger */
+}
+
+.blockchain-object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: swing 3s ease-in-out infinite;
+  font-size: 4rem; /* Increase font size for impact */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.blockchain-node,
+.contract-doc {
+  font-size: 10rem; /* Make the elements larger */
+  margin: 0 15px;
+}
+.floating-bubble {
+  position: absolute;
+  top: 30%;
+  left: 150%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+  animation: bubbleMove 3s ease-in-out infinite, bubblePop 4s infinite;
+}
+
+@keyframes bubblePop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Bubble expands */
+  }
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(20deg); /* Increase swing angle */
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+}
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes border-flow {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes border-flow-reverse {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s linear infinite;
+  background-size: 200% 100%;
+}
+
+.animate-border-flow {
+  animation: border-flow 4s linear infinite;
+}
+
+.animate-border-flow-reverse {
+  animation: border-flow-reverse 4s linear infinite;
+}
+.neon-text {
+  text-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500,
+    0 0 40px #ffa500;
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px #ffa500, 0 0 30px #ffa500, 0 0 45px #ffa500;
+}
+
+.neon-border {
+  border: 2px solid #ffa500;
+  box-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500;
+}
+
+.neon-icon {
+  filter: drop-shadow(0 0 5px #00bfff);
+}
+/* Container for the entire carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: black; /* Dark background */
+}
+
+/* Wrapper for slides to contain the moving content */
+.carousel-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Continuous scroll */
+}
+
+/* The main content of the carousel */
+.carousel-content {
+  display: flex;
+  min-width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+/* Individual slide */
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 40%;
+  background: #111;
+  padding: 20px;
+  margin-right: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/* Text style for project names */
+.project-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cbb4dc; /* Neon cyan */
+  text-shadow: 0 0 10px rgba(24, 47, 196, 0.7);
+  margin-bottom: 10px;
+}
+
+/* Countdown and highest bid */
+.countdown,
+.highest-bid {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.bid-amount {
+  font-weight: bold;
+  color: #ff00e5; /* Neon pink */
+}
+
+/* CTA button styling */
+.cta-btn {
+  background: linear-gradient(90deg, #7000ff); /* Neon gradient */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 246, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 246, 255, 0.8);
+}
+
+/* Keyframe for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Styles for modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for modal content */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+/* Neon Glow for Text */
+.neon-glow {
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+}
+
+/* Neon Box Shadow */
+.neon-box {
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+}
+
+/* Custom Neon Glow Shadows */
+.shadow-neon {
+  box-shadow: 0 0 15px rgba(128, 90, 213, 0.8), 0 0 25px rgba(128, 90, 213, 0.6),
+    0 0 35px rgba(128, 90, 213, 0.4);
+}
+
+.shadow-neon-lg {
+  box-shadow: 0 0 20px rgba(128, 90, 213, 1), 0 0 30px rgba(128, 90, 213, 0.8),
+    0 0 40px rgba(128, 90, 213, 0.6);
+}
+
+/* Hide Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
